@@ -1,12 +1,12 @@
 <template>
   <video id="bloodRainVideo" autoplay muted loop preload="auto">
-    <!-- <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg> -->
     <source src="BloodRain.m4v" type=video/mp4>
     <source src="BloodRain.mkv" type="video/webm">
   Sorry, your browser doesn't support embedded videos, 
   but don't worry, you can <a href="BloodRain.mkv">download it</a>
   and watch it with your favorite video player!
   </video>
+  <img id="logo" src="../assets/logo.svg" alt="Logo">
 </template>
 
 <script lang="ts">
@@ -33,5 +33,12 @@ export default class Main extends Vue {
   width: 100%;
   object-fit: fill;
   display: block;
+}
+#logo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  left: 50%;
+  top: 50%;
 }
 </style>

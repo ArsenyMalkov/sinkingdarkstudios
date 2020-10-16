@@ -1,4 +1,4 @@
-# redniddlestudios
+# Singing Dark Studios
 
 ## Project setup
 ```

@@ -1,7 +1,8 @@
 <template>
   <video id="bloodRainVideo" autoplay muted loop preload="auto">
-    <source src="BloodRain.m4v" type=video/mp4>
+    <source src="BloodRain.m4v" type="video/mp4">
     <source src="BloodRain.mkv" type="video/webm">
+    <source src="BloodRain.webm" type="video/webm; codecs=vp9">
   Sorry, your browser doesn't support embedded videos, 
   but don't worry, you can <a href="BloodRain.mkv">download it</a>
   and watch it with your favorite video player!

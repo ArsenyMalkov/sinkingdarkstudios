@@ -34,11 +34,18 @@ export default class Main extends Vue {
   object-fit: fill;
   display: block;
 }
+
 #logo {
   position: absolute;
   transform: translate(-50%, -50%);
   width: 40%;
   left: 50%;
   top: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    width: 80%;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="wiki-item">
+  <div class="wiki-item" :style="{ 'background-color': bkgColor }">
     <img class="icon" :src="require(`@/assets/${icon}`)" />
     <div class="content">
       <router-link to="/about">{{name}}</router-link>
@@ -13,12 +13,14 @@ import { Options, Vue } from 'vue-class-component';
 @Options({
   props: {
     icon: String,
-    name: String
+    name: String,
+    bkgColor: String
   }
 })
 export default class WikiItem extends Vue {
   icon!: string;
   name!: string;
+  bkgColor!: string;
 }
 </script>
 
@@ -27,6 +29,7 @@ export default class WikiItem extends Vue {
 .icon {
   padding-top: 4px;
   width: 50%;
+  vertical-align : top;
 }
 
 .wiki-item {
@@ -35,7 +38,6 @@ export default class WikiItem extends Vue {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
-  background-color: rgb(207, 74, 167);
 }
 
 .content {

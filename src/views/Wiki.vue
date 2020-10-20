@@ -1,10 +1,10 @@
 <template>
   <Nav />
   <div class="wiki-container">
-    <WikiItem name="Amulets" icon="amulets.svg" />
-    <WikiItem name="Locations" icon="amulets.svg" />
-    <WikiItem name="Characters" icon="amulets.svg" />
-    <WikiItem name="Abilities" icon="amulets.svg" />
+    <WikiItem name="Amulets" icon="amulets.svg" bkgColor="rgb(141, 74, 207)" />
+    <WikiItem name="Locations" icon="locations2.svg" bkgColor="rgb(79, 74, 207)" />
+    <WikiItem name="Characters" icon="amulets.svg" bkgColor="rgb(207, 200, 74)" />
+    <WikiItem name="Abilities" icon="amulets.svg" bkgColor="rgb(207, 74, 74)" />
   </div>
 </template>
 

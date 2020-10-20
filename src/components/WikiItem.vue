@@ -30,12 +30,11 @@ export default class WikiItem extends Vue {
 }
 
 .wiki-item {
+  width: 70%;
+  margin: auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
-  margin-left: 20px;
-  margin-top: 20px;
-  width: 10%;
   background-color: rgb(207, 74, 167);
 }
 
@@ -50,7 +49,6 @@ export default class WikiItem extends Vue {
 }
 
 img {
-  width: 100%;
   border-radius: 5px 5px 0 0;
 }
 

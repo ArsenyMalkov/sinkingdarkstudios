@@ -1,8 +1,8 @@
 <template>
   <div class="wiki-item">
-    <img src="../assets/logo.svg" />
+    <img class="icon" :src="require(`@/assets/${icon}`)" />
     <div class="content">
-      <router-link to="/about">Name</router-link>
+      <router-link to="/about">{{name}}</router-link>
     </div>
   </div>
 </template>
@@ -12,14 +12,23 @@ import { Options, Vue } from 'vue-class-component';
 
 @Options({
   props: {
-    // msg: String
+    icon: String,
+    name: String
   }
 })
-export default class WikiItem extends Vue {}
+export default class WikiItem extends Vue {
+  icon!: string;
+  name!: string;
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.icon {
+  padding-top: 4px;
+  width: 50%;
+}
+
 .wiki-item {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -27,11 +36,13 @@ export default class WikiItem extends Vue {}
   margin-left: 20px;
   margin-top: 20px;
   width: 10%;
+  background-color: rgb(207, 74, 167);
 }
 
 .content {
   padding-top: 16px;
   padding-bottom: 16px;
+  background-color: rgb(255, 255, 255);
 }
 
 .wiki-item:hover {

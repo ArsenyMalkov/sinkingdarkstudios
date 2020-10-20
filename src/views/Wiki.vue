@@ -1,7 +1,10 @@
 <template>
   <Nav />
   <div class="wiki">
-    <WikiItem />
+    <WikiItem name="Amulets" icon="amulets.svg" />
+    <WikiItem name="Locations" icon="amulets.svg" />
+    <WikiItem name="Characters" icon="amulets.svg" />
+    <WikiItem name="Abilities" icon="amulets.svg" />
     <!-- <ul>
       <li>Coffee</li>
       <li>Tea</li>

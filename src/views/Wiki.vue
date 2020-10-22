@@ -31,4 +31,9 @@ export default class Wiki extends Vue {}
   grid-row-gap: 50px;
   margin-top: 50px;
 }
+@media only screen and (max-width: 600px) {
+  .wiki-container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
+  }
+}
 </style>

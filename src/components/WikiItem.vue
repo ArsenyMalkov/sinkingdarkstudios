@@ -44,6 +44,8 @@ export default class WikiItem extends Vue {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .wiki-item:hover {
